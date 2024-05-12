@@ -7,6 +7,7 @@ import {
 import ChatRoom from "./pages/ChatRoom";
 import ErrorPage from "./pages/ErrorPage";
 import HomePage from "./pages/HomePage";
+import UserProfile from "./pages/UserProfile";
 
 const router = createBrowserRouter([
   {

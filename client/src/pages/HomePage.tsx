@@ -2,7 +2,13 @@
 export default function HomePage() {
   return (
     <div>
-      <h1>home</h1>
+    
+        <form action="">
+          
+          <input type="text" placeholder="Please Nick name" name="" id="" required />
+          <button type='submit'>Go to Chatty</button>
+        </form>
+
     </div>
   )
 }
