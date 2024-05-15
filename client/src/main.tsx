@@ -1,8 +1,12 @@
+
+import "@fontsource/inter"; 
+import "@fontsource/inter/400.css"; 
+import "@fontsource/inter/900.css"; 
+
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
-import '@fontsource/inter'
 import { ChakraProvider,extendTheme } from '@chakra-ui/react'
 
 
@@ -17,6 +21,13 @@ import { ChakraProvider,extendTheme } from '@chakra-ui/react'
       fonts: {
         heading: `'Inter', sans-serif`,
         body: `'Inter', sans-serif`,
+      },
+      fontWeights: {
+        thin:100,
+        normal: 400,
+        medium: 500,
+        bold: 600,
+        black:900,
       },
     })
 
