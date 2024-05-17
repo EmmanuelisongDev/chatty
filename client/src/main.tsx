@@ -15,7 +15,8 @@ import { ChakraProvider,extendTheme } from '@chakra-ui/react'
         brand:{
           50:"#FF6E40",
           100:"#1E3D59",
-          200:"#F5F0E1"
+          200:"#F5F0E1",
+          300:"#9A9A9A"
         },
       },
       fonts: {

@@ -1,4 +1,4 @@
-import {io} from "socket.io-client"
+
 import Layout from "./Layout";
 import {
   createBrowserRouter,
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  const socket = io('http://localhost:5173/')  
+
 
   return (
   

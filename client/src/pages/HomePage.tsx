@@ -14,7 +14,7 @@ export default function HomePage() {
     setError(validationError);
     setIsValid(!validationError);
   }
-
+  
   function validateUserName(name: string): string | null {
     if (!name.trim()) {
       return "User name cannot be empty.";
@@ -32,12 +32,13 @@ export default function HomePage() {
       return;
     }
     console.log(userName);
+    setError(validationError);
     setUserName('');
     setIsValid(false);
   }
 
   return (
-    <Box bg="brand.200">
+    <Box>
       <Center pt={4}>
         <Text color="brand.100" fontWeight="black" fontSize="md">
           Chatty
@@ -69,19 +70,6 @@ export default function HomePage() {
               onChange={handleUserNameChange}
               value={userName}
             />
-
-            {/* <Button
-              onClick={handleUserJoinChat}
-              bg='brand.50'
-              _hover={isValid ? { bg: 'brand.100', color: 'brand.50' } : { bg: 'brand.50' }}
-              color='brand.200'
-              size='md'
-              as={isValid ? Link : 'button'}
-              to={isValid ? "/chatroom" : undefined}
-              disabled={!isValid}
-            >
-              Join Chat
-            </Button> */}
 
 {isValid ? (
           <Link to="/chatroom">
