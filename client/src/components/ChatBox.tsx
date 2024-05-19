@@ -1,20 +1,30 @@
 import React from 'react';
 
-interface Message {
-  user: string;
-  text: string;
-}
-
-interface Props {
-  message: Message;
-}
-
-const ChatMessage: React.FC<Props> = ({ message }) => {
+const ChatMessage: React.FC<Props> = () => {
   return (
     <div>
-      <p>{message.user}: {message.text}</p>
+      <p></p>
     </div>
   );
 };
 
 export default ChatMessage;
+
+
+export  function SenderChatBox() {
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
+
+
+export function ReceiverChatBox() {
+  return (
+    <div>
+      
+    </div>
+  )
+}
