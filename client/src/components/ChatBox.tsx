@@ -11,7 +11,7 @@ const ChatMessage: React.FC<Props> = () => {
 export default ChatMessage;
 
 
-export  function SenderChatBox() {
+export  function ChatBoxSender() {
   return (
     <div>
       
@@ -21,7 +21,7 @@ export  function SenderChatBox() {
 
 
 
-export function ReceiverChatBox() {
+export function ChatBoxReceiver() {
   return (
     <div>
       
