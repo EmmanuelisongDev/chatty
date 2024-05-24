@@ -76,10 +76,6 @@ export default function Navbar() {
       Leave
     </Button>
 
-
-
-
-
       </Flex>
 
 
