@@ -14,13 +14,13 @@ export default function Navbar() {
   };
   
   return (
-    <Box p={{base:2,md:5}}  >
+    <Box p={{base:2,md:5}}  position='fixed' top='0' w='100%' >
       <Flex  justifyContent='space-between' alignItems='center'>
 
         <Menu  >     
     <HStack>
     <MenuButton
-      rightIcon={
+       rightIcon={
         <Box 
         as={HamburgerIcon} 
         w={{ base: 5, md: 7 }} 
