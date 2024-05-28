@@ -50,7 +50,7 @@ export default function Navbar() {
     </HStack>
   <MenuList minW={0} bg='brand.100' >
   {Object.entries(names).map(([key, name]) => (
-        <MenuItem key={key} bg='brand.100' color='brand.200'>
+        <MenuItem key={key} bg='brand.100' border='none' color='brand.200'>
           {name}
         </MenuItem>
       ))}

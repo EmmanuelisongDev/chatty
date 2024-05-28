@@ -1,6 +1,6 @@
 import { Button, Center, Container, Input, Box, Flex, Text, HStack } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import { ChangeEvent, useState,useRef,useEffect } from "react";
+import { ChangeEvent, useState } from "react";
 
 export default function HomePage() {
   const [userName, setUserName] = useState<string>('');
@@ -14,23 +14,6 @@ export default function HomePage() {
     setError(validationError);
     setIsValid(!validationError);
   }
-
-  const buttonRef = useRef<HTMLButtonElement>(null);
-
-  useEffect(() => {
-    const handleKeyPress = (event: KeyboardEvent) => {
-      if (event.key === 'Enter') {
-        buttonRef.current?.click();
-      }
-    };
-
-    window.addEventListener('keypress', handleKeyPress);
-
-    return () => {
-      window.removeEventListener('keypress', handleKeyPress);
-    };
-  }, []);
-
   
   function validateUserName(name: string): string | null {
     if (!name.trim()) {
@@ -95,14 +78,13 @@ export default function HomePage() {
               _hover={{ bg: 'brand.100', color: 'brand.50' }}
               color='brand.200'
               size='md'
-
+              
             >
               Join Chat
             </Button>
           </Link>
         ) : (
           <Button
-          ref={buttonRef}
             onClick={handleUserJoinChat}
             bg='brand.50'
             _hover={{ bg: 'brand.50' }}

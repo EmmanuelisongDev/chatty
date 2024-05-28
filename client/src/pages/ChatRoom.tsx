@@ -31,14 +31,14 @@ const ChatRoom: React.FC = () => {
         <InputLeftElement pointerEvents="none">
           <Icon as={BsEmojiSmile} color="brand.100"  fontWeight='black'  />
         </InputLeftElement>
-        <Input placeholder="Enter message" bgColor="grey.500" />
+        <Input placeholder="Enter message" size='lg'  bgColor="grey.500" />
         <InputRightElement>
           <Icon as={AttachmentIcon} color="grey.500" />
           <Icon as={FaMicrophone} color="grey.500" />
         </InputRightElement>
       </InputGroup>
     </Box>
-    <Button bgColor="brand.50" color='brand.100'  >Send</Button>
+    <Button bgColor="brand.50" color='brand.100'>Send</Button>
       </Box>
     </Box>
     </>
