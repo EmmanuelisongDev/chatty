@@ -39,6 +39,7 @@ const ChatRoom: React.FC = () => {
       </InputGroup>
     </Box>
     <Button bgColor="brand.50" color='brand.100'>Send</Button>
+    <Button bgColor="brand.50" color='brand.100'>Send</Button>
       </Box>
     </Box>
     </>
